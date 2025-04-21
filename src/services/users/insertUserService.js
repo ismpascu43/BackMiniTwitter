@@ -46,10 +46,10 @@ const insertUserService = async (email, password, registrationCode) => {
     // Crear el usuario
     await pool.query(
         `
-            INSERT INTO users (email, password)
-            VALUES (?, ?)
+            INSERT INTO users (email, password, registrationCode)
+            VALUES (?,?,?)
         `,
-        [email, passwordHassed]
+        [email, passwordHassed, registrationCode]
     );
 
 }
