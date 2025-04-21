@@ -17,4 +17,5 @@ export const {
     SECRET,
 
     UPLOAD_DIR,
+    PORT
 } = process.env;
