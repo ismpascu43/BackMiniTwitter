@@ -1,7 +1,6 @@
 import server from "./src/server.js";
+import { PORT } from "./env.js";
 
-const PORT = process.env.PORT || 3001;
-
-server.listen(PORT, () => {
+server.listen(PORT || 3001, () => {
     console.log(`Servidor escuchando en puerto ${PORT}`); 
 });
