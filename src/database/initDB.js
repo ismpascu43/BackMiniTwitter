@@ -32,7 +32,7 @@ const initDB = async () => {
                 firstName VARCHAR(50) DEFAULT NULL,
                 lastName VARCHAR(50) DEFAULT NULL,
                 password VARCHAR(100) NOT NULL,
-                avatar VARCHAR(100) DEFAULT NULL,
+                avatar VARCHAR(40) DEFAULT NULL,
                 active BOOLEAN DEFAULT false,
                 role ENUM('admin', 'normal') DEFAULT 'normal',
                 registrationCode CHAR(30),
